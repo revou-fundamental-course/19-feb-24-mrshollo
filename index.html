@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>SEFC Course</title>
+</head>
+
+<body>
+
+  <header>
+    <header class="st-site-header st-style1 st-sticky-header">
+      <div class="st-main-header">
+        <div class="container">
+          <div class="st-main-header-in">
+            <div class="st-main-header-left">
+              <a class="st-site-branding" href="index"><img src="assets/img/logo.png" alt="image" style="width:50px;height:50px;"></a>
+            </div></br></br>
+            <div class="st-main-header-right">
+              <div class="st-nav">
+                <ul class="st-nav-list st-onepage-nav">
+                  <li><a href="#home" class="st-smooth-move">Home</a></li>
+                  <li><a href="#profilepage" class="st-smooth-move">My Profile</a></li>
+                  <li><a href="#portfolio" class="st-smooth-move">Portfolio</a></li>
+                  <li><a href="#messagepage" class="st-smooth-move">Message Us</a></li>
+                </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+  <main>
+<br>
+    <section id="homepage">
+      <h1>
+        Hi <span id="name"></span>, Welcome to Our Website
+      </h1>
+      <p>
+        Ini adalah sebuah website latihan pertama dari REVOU
+      </p>
+    </section>
+
+    <section id="profilepage">
+      <h2>My Profile</h2>
+      <div class="photo-container">
+        <img src="assets/img/profile.jpg" id="photo-profile">
+      </div>
+      <div class="profile-summary">
+        <h3 style="text-align: center;">Halo!</h3>
+        <p>
+          Nama saya Marshep Ollo, <i>Mahasiswa</i> dari Universitas Pendidikan Indonesia jurusan S1 Sistem
+          Telekomunikasi. Saya sendiri memiliki ketertarikan dan minat pada bidang Pengembangan website, saya sering menggunakan MySQL dan PHP sebagai teman sehari-hari saya.
+        </p>
+        <p>
+          Sekian profil singkat saya, terimakasih telah berkunjung ke <i>Website</i> sederhana ini.
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portofolio</h2>
+      <div class="container">
+        <div class="item">
+          <img src="assets/img/html.webp">
+        </div>
+        <div class="item">
+          <img src="assets/img/css.webp">
+        </div>
+        <div class="item">
+          <img src="assets/img/js.png">
+        </div>
+      </div>
+      <div class="container">
+        <div class="item-name">
+          <h3>HTML</h3>
+        </div>
+        <div class="item-name">
+          <h3>CSS</h3>
+        </div>
+        <div class="item-name">
+          <h3>JavaScript</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id "messagepage">
+      <h2>Message Us</h2>
+      <div class="container">
+        <div class="formf">
+          <form name="message-form" onsubmit="validateForm(); return false">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Nama</td>
+                  <td>
+                    : <input placeholder="Enter your name" type="text" name="full-name" id="asma" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tanggal Lahir</td>
+                  <td>
+                    : <input type="date" name="birth-date" id="ttl" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jenis Kelamin</td>
+                  <td>
+                    : <input type="radio" id="Laki-Laki" name="gender" value="Laki-Laki" required>
+                    <label for="Laki-Laki">Laki - Laki</label>
+                    <input type="radio" id="Perempuan" name="gender" value="Perempuan" required>
+                    <label for="Perempuan">Perempuan</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pesan </td>
+                  <td>
+                    : <textarea placeholder="Write your message..." name="messages" rows="5" id="pesan-ini"
+                      required></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input type="submit" id="submit-button" value="Submit">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <div class="form-answer">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:
+                  <span id="sender-full-name"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="ttl">Tanggal Lahir</label></td>
+                <td>:
+                  <span id="sender-birth-date"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>:
+                  <span id="sender-gender"></span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="pesan">Pesan</label></td>
+                <td>:
+                  <span id="sender-messages"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+      <div class="footer">
+        <p>Created by Mrsh Dev</p>
+      </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    let visitorName = prompt("Masukkan nama Anda dibawah ini!");
+    document.getElementById("name").innerText = visitorName;
+  </script>
+
+</body>
+
+</html>
